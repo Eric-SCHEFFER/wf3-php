@@ -20,7 +20,5 @@ switch ($uri) {
         require __DIR__ . '/pages/homepage.php';
         break;
 }
-
 ?>
-
 </html>

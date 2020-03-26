@@ -36,6 +36,8 @@
                     <?php echo($mention); ?>
                 </span>
         </h5>
+        <?php if(!$_GET['name']) { ?>
         <a href="http://localhost:9090/eleve?name=<?php echo($personne['name'])?>">voir la carte de l'éleve</a>
+        <?php } ?>
     </div>
 </div>
