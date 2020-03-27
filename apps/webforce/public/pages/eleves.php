@@ -1,15 +1,22 @@
+<?php
+
+    $userName = $_POST['userName'];
+    echo($userName);
+
+?>
+
 <body>
 <div class="container">
 
     <div class="row">
-        <form action="./form.php">
-            <div class="col-3">
-                <input type="text" name="name" placeholder="votre nom">
-            </div>
-            <div class="col-2">
-                <button type="submit">envoyer</button>
-            </div>
+
+        <form method="post" action="http://localhost:9090/eleves">
+
+            <input name="userName" type="text" placeholder="votre nom">
+            <input type="submit" value="enoyer">
+
         </form>
+
     </div>
     <div class="row">
         <?php
