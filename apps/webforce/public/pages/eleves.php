@@ -1,8 +1,6 @@
 <?php
 
     $userName = $_POST['userName'];
-    echo($userName);
-
 ?>
 
 <body>
