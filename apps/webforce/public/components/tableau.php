@@ -19,12 +19,11 @@ Trier par :
         <option value="category">catégorie</option>
         <option value="price">prix</option>
         <option value="mark">note</option>
-        <input name="valueX" type="number" placeholder="entre">
-        <input name="valueY" type="number" placeholder="et">
-
-        <input class="btn btn-primary my-2" type="submit" value="trier">
+    </select>
+    <input name="valueX" type="number" placeholder="entre">
+    <input name="valueY" type="number" placeholder="et">
+    <input class="btn btn-primary my-2" type="submit" value="trier">
 </form>
-</select>
 
 <table class="table table-dark">
     <thead>
