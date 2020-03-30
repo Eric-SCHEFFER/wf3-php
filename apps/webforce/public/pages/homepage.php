@@ -23,8 +23,11 @@ $stm = $pdo->query("SELECT produits.name, produits.mark, produits.price, produit
  categories.id as category_id, categories.name as category_name
   from produits inner join categories on produits.category = categories.id");
 //je retourner tous mes articles sous forme d'un tableau via la méthode fetchAll()
+
 $produits = $stm->fetchAll();
 
+$stm = $pdo->query("SELECT * from categories");
+$categories = $stm->fetchAll();
 
 
 

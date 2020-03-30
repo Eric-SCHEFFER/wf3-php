@@ -13,6 +13,9 @@ switch($uri){
     case "/":
         require __DIR__ . '/pages/homepage.php';
         break;
+    case "/category":
+        require __DIR__ . '/pages/category.php';
+        break;
     default :
         require __DIR__ . '/pages/homepage.php';
 break;
