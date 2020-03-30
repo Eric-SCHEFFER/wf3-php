@@ -2,7 +2,7 @@
 if (isset($_POST['trier'])) {
     $tri = $_POST['trier'];
 
-    if(isset($_POST['valueX']) && isset($_POST['valueY'])){
+    if(!empty($_POST['valueX']) && !empty($_POST['valueY'])){
         $valueX = $_POST['valueX'];
         $valueY = $_POST['valueY'];
         $stm = $pdo->query("SELECT * FROM produits WHERE $tri BETWEEN $valueX AND $valueY");
