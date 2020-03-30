@@ -39,7 +39,7 @@ Trier par :
         <tr>
             <td > <?= $produit['name']; ?></td>
             <td > <?= $produit['price']; ?></td>
-            <td > <?= $produit['category']; ?></td>
+            <td > <?= $produit['category_name']; ?></td>
             <td > <?= $produit['mark']; ?></td>
         </tr>
     <?php } ?>

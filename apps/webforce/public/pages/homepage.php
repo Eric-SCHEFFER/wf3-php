@@ -19,7 +19,9 @@ if(!empty($_POST['name'])) {
 
 //Je me connecte à ma BDD avec PDO
 //Je demande a ma base de récupérer tous les articles et de les retourner sous forme d'un statement
-$stm = $pdo->query("SELECT * from produits");
+$stm = $pdo->query("SELECT produits.name, produits.mark, produits.price, produits.id,
+ categories.id as category_id, categories.name as category_name
+  from produits inner join categories on produits.category = categories.id");
 //je retourner tous mes articles sous forme d'un tableau via la méthode fetchAll()
 $produits = $stm->fetchAll();
 
