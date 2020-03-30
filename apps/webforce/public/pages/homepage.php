@@ -1,19 +1,9 @@
 <?php
-
-
-    $date = date("Y-m-d");
-
-    function getFrenchDate() {
-        return date('d-m-Y');
-    }
-
-
+//Je me connecte à ma BDD avec PDO
+//Je demande a ma base de récupérer tous les articles et de les retourner sous forme d'un statement
+$stm = $pdo->query("SELECT * from produits");
+//je retourner tous mes articles sous forme d'un tableau via la méthode fetchAll()
+$produits = $stm->fetchAll();
+require ('./components/tableau.php');
 ?>
 
-<body>
-<div class="container">
-    <h1>this is the homepage</h1>
-
-    <h2>nous sommes le <?php echo(getFrenchDate())?></h2>
-</div>
-</body>
