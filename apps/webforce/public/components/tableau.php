@@ -19,7 +19,6 @@ Trier par :
         <option value="category">catégorie</option>
         <option value="price">prix</option>
         <option value="mark">note</option>
-
         <input name="valueX" type="number" placeholder="entre">
         <input name="valueY" type="number" placeholder="et">
 
